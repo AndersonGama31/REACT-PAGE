@@ -1,10 +1,21 @@
-
+import React from 'react';
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
+<>
+<Router>
+  <Navbar>
+    
+      <Route path='/' exact />
+    
+  </Navbar>
 
-<h1>E aí?</h1>  );
+</Router>
+</>
+);
 }
 
 export default App;
